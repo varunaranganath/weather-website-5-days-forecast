@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Weather Now</h1>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    
+    <main>
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="error-message" class="hidden">Error fetching data. Please try again.</div>
+        
+        <section id="current-weather" class="hidden">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <img id="weather-icon" alt="Weather Icon">
+                <div class="weather-details">
+                    <p id="location"></p>
+                    <p id="temperature"></p>
+                    <img src="th.jpg" alt="Sunrise Icon">
+                    <p id="humidity"></p>
+                    <img src="humidity.png" alt="Sunrise Icon">
+                    <p id="wind-speed"></p>
+                    <img src="wind.png" alt="Sunrise Icon">
+                    <p id="description"></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="forecast" class="hidden">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container"></div>
+        </section>
+        
+        <section id="additional-info" class="hidden">
+            <h2>Additional Information</h2>
+            <div class="additional-info-item">
+                <img src="C:\Users\VARUN A\Pictures\weather\clear.png" alt="Sunrise Icon">
+                <p id="sunrise"></p>
+            </div>
+            <div class="additional-info-item">
+                <img src="sunset.png" alt="Sunset Icon">
+                <p id="sunset"></p>
+            </div>
+            <div class="additional-info-item">
+                <img src="uv.png" alt="UV Index Icon">
+                <p id="uv-index"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Weather Now</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #83a4d4, #b6fbff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #005f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+form input {
+    flex: 1;
+}
+
+form button {
+    background: #ff006e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #d90459;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loading, #error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding: 10px;
+    background: #ffadad;
+    color: #721c24;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.weather-info, .forecast-container, .additional-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.forecast-container div {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+.forecast-container h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.forecast-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.additional-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.additional-info-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #005f73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
